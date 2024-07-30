@@ -30,12 +30,6 @@ body{
     border-radius: 50px;
 }
 
-#shape{
-    font-family: 'Miama';
-    font-family: "Great Vibes", cursive ;
-    font-weight: lighter;
-    /* color: #d8d5d5; */
-}
 
 h1{
     color: rgb(255, 255, 255);
@@ -48,8 +42,7 @@ p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.1rem;
     font-weight: 400;  
-    line-height: 25px;
-    
+    line-height: 25px;    
 }
 
 
@@ -57,16 +50,16 @@ p{
 /* header section starts here */
 .header_parent{
     width: 1280px;
-    margin: 0 auto;    
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    background-color: rgba(35, 35, 35, 0.6);
-    
+    margin: 0 auto;   
+    /* background-color: rgba(17, 17, 17);  */
+    /* background-image: linear-gradient(180.00deg,  rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); */
+    background-image: linear-gradient(180.00deg,  rgb(35, 35, 35), rgba(119, 119, 119, 0));    
 }
 
 
 nav{    
-    width: 1016px;
-    margin: 10px auto;
+    width: 1010px;
+    margin: 0 auto;
     padding-top: 50px;
     display: flex;
     align-items: center;
@@ -74,6 +67,7 @@ nav{
     /* gap: 200px; */
     color: #fff;
 }
+
 
 nav h1{
     color: rgb(230, 83, 60);
@@ -121,7 +115,7 @@ nav ul li a:hover{
 .banner_container{
     /* border: 1px solid white; */
     width: 90%;
-    margin: 15px auto;
+    margin: 30px auto;
     display: flex;
     /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
@@ -137,8 +131,16 @@ nav ul li a:hover{
     line-height: 100%;
 }
 
+#shape{
+    font-family: 'Miama'; 
+    font-weight: 400;
+    font-size: 8rem;
+    /* font-family: "Great Vibes", cursive ; */
+    /* color: #d8d5d5; */    
+}
+
 .banner_description{
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
@@ -166,7 +168,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 .download_btn:hover{
-    background-color: rgba(83, 83, 83, 0.9);
+    background-color: rgba(83, 83, 83, 0.6);
 }
 
 
@@ -206,7 +208,7 @@ nav ul li a:hover{
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.7rem;
     font-weight: 400;
-    margin-top: 10px;    
+    margin-top: 5px;    
 }
 
 .banner_sticker_2{
@@ -248,7 +250,7 @@ nav ul li a:hover{
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.9rem;
     font-weight: 400;
-    margin-top: 10px;    
+    margin-top: 5px;    
 }
 
 
@@ -483,8 +485,7 @@ option{
     padding: 20px;
     border-radius: 18px;  
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .trainer_section img{
@@ -540,11 +541,11 @@ option{
 /* #d8d5d5 */
 .membership > h2{
     color:  #cdcaca;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     border: 1px solid #bcb9b9;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 16px 40px;
 }
 
 .plans_container{
@@ -675,7 +676,7 @@ footer p{
 footer a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 footer a:hover{
@@ -745,7 +746,10 @@ hr{
         font-size: 3rem;
         line-height: 60px;
     }
-    
+    #shape{
+        font-size: 6rem;
+    }
+
     .banner_description{
         margin-top: 40px;
         font-size: 1.2rem;
@@ -776,7 +780,7 @@ hr{
         width: 90%;
         height: 70%;
         margin-left: 20px;
-        transform: translateY(18px);
+        transform: translateY(5px);
     }
     
     .banner_sticker_1{                
@@ -829,6 +833,7 @@ hr{
 
     #run_extra_btn, #submit_calculate{
         padding: 16px 90px;
+        margin-top: 20px;
     }
 
     .run_extra_image_container{
@@ -858,8 +863,7 @@ hr{
     input[type="text"], input[type="number"], select{
         width: 46.5%;     
         padding: 5px 15px;
-        margin-right: 10px;
-        
+        margin-right: 10px;        
     }
        
     .bmi_calculator_chart_section, .trainer_section{
@@ -872,6 +876,33 @@ hr{
 
     .meet_our_team_section p{
         width: 90%;
+    }
+
+    .trainer_section{
+        padding: 30px 10px;
+        gap: 30px;
+    }
+
+    .trainer_section img{
+        width: 90%;
+        height: 10%;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .trainer_section h3{
+        left: 12%;
+        bottom: 45px;
+        
+    }    
+    .trainer_section h4{
+        position: absolute;
+        color: rgba(255, 255, 255, 0.8);
+        left: 12%;
+        bottom: 25px;
+        
     }
 
     footer{
@@ -889,8 +920,11 @@ hr{
         gap: 40px;
     }
 
-    .footer_details div{
-        width: 80%;
+    .footer_details div, #copyright, hr{
+        width: 90%;
     }
     
+    #copyright{
+        font-size: 1.3rem;
+    }
 }
